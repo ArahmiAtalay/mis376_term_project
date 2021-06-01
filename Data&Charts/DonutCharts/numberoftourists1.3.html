@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Years', 'Total'],
+          ['2018-2019 Period (No Pandemic)',     84546687],
+          ['2020-2021 Period (In Pandemic)',      15477986]
+        ]);
+
+        var options = {
+          title: 'Total Number of Tourists in 2018-2019 vs 2020-2021',
+          pieHole: 0.2,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+   
