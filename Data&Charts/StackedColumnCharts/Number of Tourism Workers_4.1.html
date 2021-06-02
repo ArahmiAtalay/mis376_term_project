@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script>
+   </head>
+   
+   <body>
+      <div id = "container" style = "width: 700px; height: 410px; margin: 0 auto">
+      </div>
+      <script language = "JavaScript">
+         function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+               ['Years', 'Catering Workers', 'Hotel Workers', 'Sports-Entertainment-Religious Services Workers', 'Airport Services', 'Travel Agency Workers',{ role: 'annotation'}],
+               ['2019',  695744,  420721, 60062,29439,62512,'Total 1268478'],
+               ['2020',  663325,  320103,55871,29050,51645,'Total 1119994'],
+               ['2021',  613729,  237623,48959,28859,46177,'Total 975347']
+            ]);
+
+            var options = {
+               title: 'Number of Tourism Workers According to Related Fields',
+                hAxis: {title: 'Years', titleTextStyle: {color: '#333'}},
+               isStacked:'true'	  
+            };  
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('container'));
+            chart.draw(data, options);
+         }
+         google.charts.setOnLoadCallback(drawChart);
+      </script>
+   </body>
+</html>
