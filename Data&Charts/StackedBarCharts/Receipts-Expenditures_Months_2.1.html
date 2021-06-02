@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script>
+   </head>
+   
+   <body>
+      <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto">
+      </div>
+      <script language = "JavaScript">
+         function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+        ['Years', 'January(Receipt)', 'January(Expenditure)', 'February(Receipt)', 'February(Expenditure)',
+         'March(Receipt)', 'March(Expenditure)', { role: 'annotation' } ],
+        ['2018', 1511, 363, 1301, 342, 1612, 373, ''],
+        ['2019', 1585, 346, 1359, 335, 1685, 385, ''],
+        ['2020', 1834, 330, 1479, 304, 787, 159, ''],
+        ['2021', 794, 68, 672, 71, 985, 96, '']
+      ]);
+
+      var options = {
+        width: 650,
+        height: 400,
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '55%' },
+        isStacked: true
+      }; 
+
+            var chart = new google.visualization.BarChart(document.getElementById('container'));
+            chart.draw(data, options);
+         }
+         google.charts.setOnLoadCallback(drawChart);
+      </script>
+   </body>
+</html>
