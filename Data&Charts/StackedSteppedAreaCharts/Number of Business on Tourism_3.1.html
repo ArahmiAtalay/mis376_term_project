@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+      </script>
+      <script type = "text/javascript" src = "https://www.google.com/jsapi">
+      </script>
+      <script type = "text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script>
+   </head>
+   
+   <body>
+      <div id = "container" style = "width: 700px; height: 400px; margin: 0 auto">
+      </div>
+      <script language = "JavaScript">
+         function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+               ['Years',  'Bed(x100)', 'Business'],
+               ['2015', 13466,         12476],
+               ['2016',     13964,         12827],
+               ['2017',        14419,         11377],
+               ['2018',      14586,         11569],
+               ['2019',        15380,         12142],
+               ['2020',      15966,         12827]
+            ]);
+
+            var options = {
+               title: 'Number of Businesses & Beds on Tourism Sector By Years',
+               hAxis: {title: 'Years'},
+               vAxis: {title: 'Numbers'},
+               isStacked: true      
+            };
+
+            var chart = new google.visualization.SteppedAreaChart(document.getElementById('container'));
+            chart.draw(data, options);
+         }
+         google.charts.setOnLoadCallback(drawChart);
+      </script>
+   </body>
+</html>
