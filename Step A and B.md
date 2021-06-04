@@ -22,18 +22,18 @@ minimal damage.
 First of all, since the tourism sector is a very large area, we 
 will mostly investigate its impact on Turkey. The data we will need here will mostly be 
 divided into pre-pandemic and post-pandemic. We will need data such as the number 
-of people visiting our country, visiting periods, the amount of income from tourism, 
+of people visiting our country, visiting periods, tourist numbers from different countries, the amount of income from tourism, expenditure amounts for tourism,  
 the number of businesses operating in the tourism sector, unemployment rates in the 
-tourism sector, etc. We will carry out our project through these data. <br /> <br />
+tourism sector, number of tourism agencies etc. We will carry out our project through these data. <br /> <br />
 Most of the data that we will receive will be obtained from statistical institutions 
-operating in Turkey. We will be providing additional data from other research and 
+operating in Turkey such as Turkish Statistical Institute and other establishments such as the Ministry of Culture and Tourism, Association of Turkish Travel Agencies, Hotel Association of Turkey. Also we will be providing additional data from other research and 
 news sources. <br /> <br />
 One of the challenges we will face here is that the pandemic is a new situation and 
 there is not enough data and studies due to the fact that it is still effectively ongoing. 
-Many studies are currently underway. For these reasons, we may have limited data 
+Many studies are currently underway. Especially since we are just finishing the first quarter of 2021 and have not yet entered the summer season, it will make it difficult for us to find data about this year. For these reasons, we may have limited data 
 or datasets. <br /> <br />
 According to our initial research, we can collect enough information. The several 
 websites of the relevant institutions and the research provided us with a sufficient 
-number of files and data. The amount of data and files that we will use will increase 
+number of files and data. Also we found several statistics via above instutions and we organized these data as 11 table (as .csv file format to set them as machine readable format). Most of the statistics are related with each other closely. The amount of data and files that we will use will increase 
 according to the progress of the project and according to our research. Net amounts
-of documents, datasets or files will be determined in later stages.
+of documents, datasets or files will become clear after prepared the project.
