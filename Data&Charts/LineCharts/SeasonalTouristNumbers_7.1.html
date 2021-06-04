@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Years', 'Winter', 'Spring','Summer','Autumn'],
+          ['2018',  4939345,8473767,15560727,10514562],
+          ['2019',  5357612,9547788,18243872,11909014],
+          ['2020',  3520547, 54067,2747628,4906187],
+          ['2021',  1826227,0,0,0]
+        ]);
+
+        var options = {
+          title: 'Seasonal Tourist Numbers',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
