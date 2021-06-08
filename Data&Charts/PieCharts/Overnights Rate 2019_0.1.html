@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['States', 'Hours per Day'],
+          ['Antalya',     82599249],
+          ['Istanbul',      23570640],
+          ['Mugla',  10161366],
+          ['Aydın', 3715650],
+          ['Izmir',    2978827],
+          ['Other States',    9782476]
+        ]);
+
+        var options = {
+          title: '2019 Overnigths Rate',
+          pieSliceText: 'label'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
