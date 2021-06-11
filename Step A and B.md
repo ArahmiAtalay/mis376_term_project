@@ -15,7 +15,7 @@ many institutions and organizations operating in this area are taking economic
 damage. As tourism, which is one of the largest sources of foreign exchange and 
 income for our country, has been disrupted due to the pandemic, we have suffered 
 great losses in economic terms both as the state and as citizens. Especially in tourism,
-oriented provinces such as Antalya, buesinesses are experiencing difficult times. For 
+oriented provinces such as Antalya, businesses are experiencing difficult times. For 
 this reason, different solutions are being sought to overcome this situation with 
 minimal damage.
 ### **Step B – Extra Details:** <br />
